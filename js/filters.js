@@ -16,6 +16,7 @@ function filterByStatus(status){
         status === "all" ? getTasks() : getTasks().filter(t => t.status === status)
     );
 }
+
 // if work on a team - conflict 
 
 // 
