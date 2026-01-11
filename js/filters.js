@@ -1,11 +1,13 @@
 // search task - you can try 
 // - filter status - you 
 
+console.log("On feature branch");
+
 function searchTasks(query){
     renderTasks(
         getTasks().filter(t => 
             t.title.toLowerCase().includes(query.toLowerCase()))
-            
+
     );
 }
 
