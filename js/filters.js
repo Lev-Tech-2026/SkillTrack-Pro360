@@ -5,6 +5,7 @@ function searchTasks(query){
     renderTasks(
         getTasks().filter(t => 
             t.title.toLowerCase().includes(query.toLowerCase()))
+            
     );
 }
 
