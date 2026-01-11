@@ -1,0 +1,41 @@
+.header{
+    position: sticky;
+    top: 0;
+    background: var(--dark);
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header nav a{
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.header nav a.active{
+    border-bottom: 2px solid var(--primary)
+}
+
+.hero{
+    height: 280px;
+    background: 
+                url('../assets/bg-img.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;            
+}
+
+.hero-content{
+    text-align: center;
+}
+
+
+.footer{
+    background: var(--dark);
+    color:white;
+    text-align: center;
+    padding:15px;
+}

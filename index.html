@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SkillTrack Pro 360</title>
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/layout.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">SkillTrack Pro 360</h1>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Track Your Learning Here</h2>
+        <p>Leran Skils. Track Progress. Build Your Imagination</p>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="intro-card">Structured Lerning</div>
+      <div class="intro-card">Real Progress</div>
+      <div class="intro-card">Career Growth</div>
+    </section>
+
+    <section class="tasks-section">
+      <h2>Learning Tasks</h2>
+
+      <div class="controls">
+        <input
+          id="search"
+          placeholder="Search tasks ..."
+          onkeyup="searchTasks(this.value)"
+        />
+        <select onchange="filterByStatus(this.value)">
+          <option value="all">All</option>
+          <option value="pending">Pending</option>
+          <option value="completed">Completed</option>
+        </select>
+      </div>
+
+      <div id="progress"></div>
+
+      <div class="task-form">
+        <input id="title" placeholder="Task Title">
+        <input id="category" placeholder="Category (Frontend / Backend)">
+        <input id="level" placeholder="level (Beginner/ Anvanced)">
+        <textarea id="description" placeholder="Task Description"></textarea>
+        <button onclick="handleAddTask()">Add Task</button>
+
+      </div>
+
+      <div id="taskList" class="task-cards"></div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h3>Edit Tasks</h3>
+            <input id="editTitle">
+            <input id="editCategory">
+            <input id="editLevel">
+            <textarea id="editDescription"></textarea>
+            <button onclick="saveEdit()">Save</button>
+            <button class="cancel" onclick="closeModal()">Cancel</button>
+        </div>
+    </div>
+
+    <footer class="footer">@Copyright 2026 SkillTrack Pro 360</footer>
+
+    <script src="js/constants.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/validators.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/stats.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+
+
+  </body>
+</html>

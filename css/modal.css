@@ -1,0 +1,14 @@
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.5);
+}
+
+.modal-content {
+    background: white;
+    width: 320px;
+    margin: 120px auto;
+    padding: 20px;
+    border-radius: var(--radius);
+}
